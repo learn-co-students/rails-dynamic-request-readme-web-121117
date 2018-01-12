@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :posts, only: :show #drawing a route that maps to a show action
+  #RECEIVE A PARAMETER - AND WILL BE PASSED TO THE CONTROLLER'S SHOW ACTION
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
